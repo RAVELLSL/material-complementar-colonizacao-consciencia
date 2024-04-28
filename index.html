@@ -1,8 +1,9 @@
+
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"> <!-- Evita o zoom automático -->
     <title>Colonização da Consciência</title>
     <style>
             /* Configurações básicas do corpo e fontes */
@@ -68,40 +69,46 @@ body {
 }
 
 @media screen and (max-width: 600px) {
-    .book, .cover {
-        width: 100%; /* Usa toda a largura disponível para alinhamento */
-        margin: 0; /* Remove a margem para alinhar com a borda da tela */
-        border-radius: 0; /* Remove bordas arredondadas para um visual limpo */
+    .book {
+        width: 90%%; /* Ajusta a largura do container para 100% */
+        margin: 0; /* Remove a margem externa para alinhar com a imagem */
+        padding: 0 20px; /* Adiciona padding interno horizontal */
     }
 
     .cover {
-        padding: 20px; /* Mantém o padding para consistência visual */
+        width: auto; /* Permite que o fundo do título ajuste sua largura automaticamente */
+        padding: 20px; /* Padding uniforme no título */
+        margin-top: 10px; /* Adiciona espaço no topo entre o título e o início da página */
+        border-radius: 0; /* Assegura que não haja bordas arredondadas no topo */
     }
 
     .cover h1 {
-        font-size: 26px; /* Aumenta o tamanho da fonte para melhor leitura */
+        font-size: 26px; /* Aumenta um pouco o tamanho da fonte do título */
         text-align: center; /* Centraliza o título */
-    }
-
-    .page {
-        padding: 20px; /* Aumenta o padding para mais espaço de leitura */
-        font-size: 18px; /* Aumenta o tamanho da fonte do texto */
-        text-align: justify; /* Justifica o texto para melhor fluidez */
+        padding: 0 20px; /* Adiciona padding horizontal para alinhar com a imagem */
     }
 
     .image-container {
-        margin-top: 10px; /* Adiciona espaço entre o título e a imagem */
-        width: 100%; /* Ajusta a largura da imagem para cobrir a largura disponível */
-        display: block; /* Garante que o container da imagem seja tratado como bloco */
-        text-align: center; /* Centraliza a imagem dentro do container */
+        width: calc(100% - 40px); /* Ajusta a largura da imagem para alinhar com o título */
+        margin: 10px auto 20px; /* Espaço acima e abaixo da imagem */
     }
 
     .image-container img {
-        width: 100%; /* Ajusta a imagem para cobrir a largura disponível */
+        width: 100%; /* Ajusta a imagem para preencher o container */
         height: auto; /* Mantém a proporção da imagem */
     }
-}
 
+    .page {
+        padding: 20px; /* Aumenta o padding para um melhor espaço de leitura */
+        font-size: 18px; /* Aumenta o tamanho da fonte para facilitar a leitura */
+        text-align: justify; /* Justifica o texto */
+    }
+
+    .page h2, .page h3 {
+        text-align: center; /* Centraliza os títulos de subseção */
+        margin: 20px 0; /* Adiciona margem vertical para separar os títulos do texto */
+    }
+}
 
     </style>
 </head>
