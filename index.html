@@ -69,17 +69,23 @@ body {
 
 @media screen and (max-width: 600px) {
     .book, .cover {
-        width: 100%; /* Garante que o livro utilize toda a largura disponível */
+        width: calc(100% - 40px); /* Reduz a largura total para permitir margens de 20px em cada lado */
+        margin: 0 20px; /* Aplica uma margem horizontal de 20px */
         border-radius: 0; /* Remove as bordas arredondadas para um visual mais limpo */
-        padding: 20px; /* Reduz o padding para não ocupar espaço demais */
     }
 
     .cover {
         padding: 20px; /* Ajusta o padding do cabeçalho para ser consistente com o restante */
+        border-radius: 0; /* Assegura que não haja bordas arredondadas no topo */
     }
 
     .cover h1 {
         font-size: 24px; /* Reduz o tamanho da fonte para melhor leitura em telas pequenas */
+        text-align: center; /* Centraliza o título principal */
+    }
+
+    .page h2, .page h3 {
+        text-align: center; /* Centraliza todos os títulos de subseções */
     }
 
     .page {
@@ -96,7 +102,6 @@ body {
         height: auto; /* Mantém a proporção da imagem */
     }
 }
-
 
     </style>
 </head>
