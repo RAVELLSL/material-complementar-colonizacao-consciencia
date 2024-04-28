@@ -69,32 +69,31 @@ body {
 
 @media screen and (max-width: 600px) {
     .book, .cover {
-        width: calc(100% - 40px); /* Reduz a largura total para permitir margens de 20px em cada lado */
-        margin: 0 20px; /* Aplica uma margem horizontal de 20px */
-        border-radius: 0; /* Remove as bordas arredondadas para um visual mais limpo */
+        width: 100%; /* Usa toda a largura disponível para alinhamento */
+        margin: 0; /* Remove a margem para alinhar com a borda da tela */
+        border-radius: 0; /* Remove bordas arredondadas para um visual limpo */
     }
 
     .cover {
-        padding: 20px; /* Ajusta o padding do cabeçalho para ser consistente com o restante */
-        border-radius: 0; /* Assegura que não haja bordas arredondadas no topo */
+        padding: 20px; /* Mantém o padding para consistência visual */
     }
 
     .cover h1 {
-        font-size: 24px; /* Reduz o tamanho da fonte para melhor leitura em telas pequenas */
-        text-align: center; /* Centraliza o título principal */
-    }
-
-    .page h2, .page h3 {
-        text-align: center; /* Centraliza todos os títulos de subseções */
+        font-size: 26px; /* Aumenta o tamanho da fonte para melhor leitura */
+        text-align: center; /* Centraliza o título */
     }
 
     .page {
-        padding: 15px; /* Reduz o padding das páginas para mais espaço de leitura */
+        padding: 20px; /* Aumenta o padding para mais espaço de leitura */
+        font-size: 18px; /* Aumenta o tamanho da fonte do texto */
+        text-align: justify; /* Justifica o texto para melhor fluidez */
     }
 
     .image-container {
-        margin: 0 auto; /* Centraliza a imagem */
-        width: 100%; /* Ajusta a imagem para usar a largura total */
+        margin-top: 10px; /* Adiciona espaço entre o título e a imagem */
+        width: 100%; /* Ajusta a largura da imagem para cobrir a largura disponível */
+        display: block; /* Garante que o container da imagem seja tratado como bloco */
+        text-align: center; /* Centraliza a imagem dentro do container */
     }
 
     .image-container img {
@@ -102,6 +101,7 @@ body {
         height: auto; /* Mantém a proporção da imagem */
     }
 }
+
 
     </style>
 </head>
